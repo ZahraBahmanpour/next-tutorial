@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { useRouter } from "next/router";
 
 export default function Products({ products }) {
@@ -7,6 +8,9 @@ export default function Products({ products }) {
   };
   return (
     <>
+      <Head>
+        <title>Products Page</title>
+      </Head>
       <h1>Posts</h1>
       <ul>
         {products.map((product) => (
