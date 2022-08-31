@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import styles from "./posts.module.css";
 
 export default function Posts({ posts }) {
   const router = useRouter();
@@ -8,7 +9,7 @@ export default function Posts({ posts }) {
   return (
     <>
       <h1>Posts</h1>
-      <ul>
+      <ul className={styles.ul}>
         {posts.map((post) => (
           <li key={post.id}>{post.title}</li>
         ))}
