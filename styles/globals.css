@@ -24,3 +24,10 @@ a {
     background: black;
   }
 }
+
+.layout-header {
+  background-color: #264653;
+  color: orange;
+  padding: 30px;
+  text-align: center;
+}

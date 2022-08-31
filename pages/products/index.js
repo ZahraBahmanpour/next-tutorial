@@ -31,3 +31,7 @@ export async function getStaticProps() {
     revalidate: 10,
   };
 }
+
+Products.getLayout = function PageLayout(page) {
+  return <>{page}</>;
+};
