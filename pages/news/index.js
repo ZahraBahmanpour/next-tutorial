@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import SportNewsList from "../../components/SportNewsList";
 
 export default function News({ news }) {
   const router = useRouter();
@@ -7,7 +8,7 @@ export default function News({ news }) {
   };
   return (
     <>
-      <h1>Posts</h1>
+      <h1>News</h1>
       <ul>
         {news.map((n) => (
           <li key={n.id}>
@@ -15,6 +16,7 @@ export default function News({ news }) {
           </li>
         ))}
       </ul>
+      <SportNewsList />
       <h3 onClick={handleClick}>Back</h3>
     </>
   );
