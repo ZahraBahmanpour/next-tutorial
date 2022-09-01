@@ -5,6 +5,12 @@ export default function ElectronicsPage() {
     <div>
       {["1", "2", "3", "4"].map((path) => (
         <div key={path}>
+          {/* <img
+            src={`/images/${path}.jpg`}
+            height={300}
+            width={300}
+            alt={"electronics"}
+          /> */}
           <Image
             src={`/images/${path}.jpg`}
             height={300}
